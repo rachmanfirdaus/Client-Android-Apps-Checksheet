@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_scanqrcode"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="Scan QR Code" />
+        <item
+            android:id="@+id/nav_handover"
+            android:icon="@drawable/ic_baseline_access_time_filled_24"
+            android:title="Handover" />
+        <item
+            android:id="@+id/nav_initialinspection"
+            android:icon="@drawable/ic_baseline_playlist_add_check_24"
+            android:title="Initial Shift Inspection" />
+        <item
+            android:id="@+id/nav_parameters"
+            android:icon="@drawable/ic_baseline_miscellaneous_services_24"
+            android:title="Production Parameters" />
+        <item
+            android:id="@+id/nav_material"
+            android:icon="@drawable/ic_baseline_format_list_numbered_rtl_24"
+            android:title="Materials" />
+        <item
+            android:id="@+id/nav_productionresult"
+            android:icon="@drawable/ic_baseline_approval_24"
+            android:title="Production Results" />
+        <item
+            android:id="@+id/nav_rejectimdform"
+            android:icon="@drawable/ic_baseline_autorenew_24"
+            android:title="IMD Reject" />
+        <item
+            android:id="@+id/nav_totalresinusage"
+            android:icon="@drawable/ic_baseline_data_usage_24"
+            android:title="Total Resin Usage" />
+        <item
+            android:id="@+id/nav_dailyreport"
+            android:icon="@drawable/ic_baseline_report_24"
+            android:title="Report" />
+
+    </group>
+</menu>

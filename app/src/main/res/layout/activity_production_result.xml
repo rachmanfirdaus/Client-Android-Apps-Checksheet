@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".ui.productionresult.ProductionResult">
+
+    <ScrollView
+        android:id="@+id/contenform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ppheader"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                        android:src="@drawable/productionresultbar"/>
+            <TextView
+                android:layout_below="@+id/ppheader"
+                android:id="@+id/txt_operatornamed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Operator "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_below="@+id/ppheader"
+                android:id="@+id/edt_operatorname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="133dp"
+                android:layout_marginBottom="4dp"
+                android:hint="0perator"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_viewshift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_operatorname"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Shift "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_shift"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_operatornamed"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_resultofproduction"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/spn_shift"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_prodresult"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_viewshift"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_qtytotalcap"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_prodresult"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Qty                    Pcs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+             <EditText
+                 android:id="@+id/edt_qtytotalcaptext"
+                 android:layout_width="70dp"
+                 android:layout_height="40dp"
+                 android:layout_below="@+id/txt_resultofproduction"
+                 android:layout_marginLeft="55dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="4dp"
+                 android:hint="   Val"
+                 android:textSize="17dp" />
+
+             <TextView
+                 android:id="@+id/txt_weighttotalcap"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/spn_prodresult"
+                 android:layout_marginLeft="180dp"
+                 android:background="@drawable/background"
+                 android:padding="4dp"
+                 android:text="  Weight                kg"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                 android:textColor="#000000"
+                 android:textSize="18dp"
+                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_weighttotalcaptext"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint="   Val"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_resultofproduction2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edt_weighttotalcaptext"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+             <Spinner
+                 android:id="@+id/spn_prodresult2"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:layout_below="@+id/txt_weighttotalcap"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="4dp"
+                 android:textSize="20dp" />
+
+             <TextView
+                 android:id="@+id/txt_qtygoodcap"
+                 android:layout_width="170dp"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/spn_prodresult2"
+                 android:background="@drawable/background"
+                 android:padding="4dp"
+                 android:text="  Qty                    Pcs"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                 android:textColor="#000000"
+                 android:textSize="18dp"
+                 android:textStyle="bold" />
+
+             <EditText
+                 android:id="@+id/edt_qtygoodcaptext"
+                 android:layout_width="70dp"
+                 android:layout_height="40dp"
+                 android:layout_below="@+id/txt_resultofproduction2"
+                 android:layout_marginLeft="55dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="4dp"
+                 android:hint="   Val"
+                 android:textSize="17dp" />
+
+             <TextView
+                 android:id="@+id/txt_weightgoodcap"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/spn_prodresult2"
+                 android:layout_marginLeft="180dp"
+                 android:background="@drawable/background"
+                 android:padding="4dp"
+                 android:text="  Weight                kg"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                 android:textColor="#000000"
+                 android:textSize="18dp"
+                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_weightgoodcaptext"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction2"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint="   Val"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_resultofproduction3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edt_weightgoodcaptext"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_prodresult3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_weightgoodcap"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_qtyrejectpurgingcap"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_prodresult3"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Qty                    Pcs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_qtyrejectpurgingcaptext"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction3"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:hint="   Val"
+                android:textSize="17dp" />
+
+             <TextView
+                 android:id="@+id/txt_weightrejectpurgingcap"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/spn_prodresult3"
+                 android:layout_marginLeft="180dp"
+                 android:background="@drawable/background"
+                 android:padding="4dp"
+                 android:text="  Weight                kg"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                 android:textColor="#000000"
+                 android:textSize="18dp"
+                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_weighrejectpurgingvaltext"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction3"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:hint="   Val"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_resultofproduction4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edt_weighrejectpurgingvaltext"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_prodresult4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_weightrejectpurgingcap"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_qtyrejectimd"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_prodresult4"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Qty                    Pcs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_qtyrejectimdvaltext"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction4"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="4dp"
+                android:hint="   Val"
+                android:textSize="17dp" />
+
+             <TextView
+                 android:id="@+id/txt_weightrejectimd"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/spn_prodresult4"
+                 android:layout_marginLeft="180dp"
+                 android:background="@drawable/background"
+                 android:padding="4dp"
+                 android:text="  Weight                kg"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                 android:textColor="#000000"
+                 android:textSize="18dp"
+                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_weighrejectimdvaltext"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction4"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="4dp"
+                android:hint="   Val"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_resultofproduction5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edt_weighrejectimdvaltext"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_prodresult5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_weightrejectimd"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+             <TextView
+                 android:id="@+id/txt_weightpurgingextruder"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/spn_prodresult5"
+                 android:background="@drawable/background"
+                 android:padding="4dp"
+                 android:text="  Weight                                                          kg"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                 android:textColor="#000000"
+                 android:textSize="18dp"
+                 android:textStyle="bold" />
+
+             <EditText
+                 android:id="@+id/edt_weightrejectpurgingextrudertext"
+                 android:layout_width="280dp"
+                 android:layout_height="40dp"
+                 android:layout_below="@+id/txt_resultofproduction5"
+                 android:layout_marginLeft="70dp"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginBottom="4dp"
+                 android:hint="                      Val"
+                 android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_resultofproduction6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edt_weightrejectpurgingextrudertext"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="4dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_prodresult6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_weightpurgingextruder"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_weighttotalreject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_prodresult6"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Weight                                                         kg"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_weighttotalrejectvaltext"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_resultofproduction6"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:hint="                      Val"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_below="@+id/edt_weighttotalrejectvaltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#00BCD4"
+                android:text="SUBMIT"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

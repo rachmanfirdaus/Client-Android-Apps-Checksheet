@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".ui.dailyreport.DailyReport">
+
+    <ScrollView
+        android:id="@+id/contenform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/ppheader"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/dailyreportheader" />
+
+            <TextView
+                android:layout_below="@+id/ppheader"
+                android:id="@+id/txt_operatornamed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Operator "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_operatorname"
+                android:layout_below="@+id/ppheader"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="133dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint="0perator"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/txt_machinery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_operatorname"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Machine "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_machine"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_operatornamed"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/txt_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_machine"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Line "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_lineproduction"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_machinery"
+                android:layout_marginLeft="133dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Line"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/txt_viewshift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_lineproduction"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Shift "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_shift"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_line"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_trouble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_shift"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Time "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_troubletime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_viewshift"
+                android:layout_marginLeft="133dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Time"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/edt_myreport"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/edt_troubletime"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="Trouble Reporting :"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_myreport"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#00BCD4"
+                android:text="SUBMIT"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

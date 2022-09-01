@@ -1,0 +1,123 @@
+<resources>
+    //-----------------------Array for navigation ----------------
+    <string name="app_name">Package List</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    //-----------------------Array for Menu----------------
+    <string name="menu_home">Home</string>
+    <string name="menu_scanqrcode">Scan QR Code</string>
+    <string name="menu_handover">Handover Form</string>
+    <string name="menu_initialinspection">Initial Shift Inspection</string>
+    <string name="menu_parameters">Production Parameters</string>
+    <string name="menu_material">Materials</string>
+    <string name="menu_productionreslut">Production Result</string>
+    <string name="menu_rejectimdform">IMD Reject</string>
+    <string name="menu_dailyreport">Daily Report</string>
+    <string name="menu_totalresinusage">Total Resin Usage</string>
+
+    //-----------------------Array for Runtime Shift ----------------
+    <string-array name="defineshift">
+        <item>Shift 1 (06.00-14.00)</item>
+        <item>Shift 2 (14.00-22.00)</item>
+        <item>Shift 3 (22.00-06.00)</item>
+    </string-array>
+
+    //-----------------------Array for Production Parameter ----------------
+    <string-array name="productionparameteritem">
+        <item>Cycle Time (4.32)</item>
+        <item>Temperature Chiller (7-13°C)</item>
+        <item>Pressure Chiller (5-8 Bar)</item>
+        <item>Pressure Cooling Tower (5-8 Bar)</item>
+        <item>Temperature Extruder 1 (200-250°C)</item>
+        <item>Temperature Extruder 2 (200-250°C)</item>
+        <item>Temperature Extruder 3 (200-250°C)</item>
+        <item>Temperature Extruder 4 (200-250°C)</item>
+        <item>Temperature B/Head (200-250°C)</item>
+        <item>Temperature S/Off (200-250°C)</item>
+        <item>Temperature Adapter (200-250°C)</item>
+        <item>Temperature Tip All (200-250°C)</item>
+        <item>Temperature Manifold All (200-250°C)</item>
+        <item>Temperature Sprue (200-250°C)</item>
+        <item>Temperature Hydraullic Oil (200-250°C)</item>
+        <item>Pressure [Low Prssure] (6.5-10 Bar)</item>
+    </string-array>
+
+    //-----------------------Array for Material Usage Type ----------------
+    <string-array name="materialusagetype">
+        <item>Virgin</item>
+        <item>Regrind</item>
+        <item>Variance Resin</item>
+        <item>Achivement Cap</item>
+    </string-array>
+    //-----------------------Array for Material Used Type ----------------
+    <string-array name="materialusedtypes">
+        <item>Resin</item>
+        <item>Regrind</item>
+        <item>MB</item>
+    </string-array>
+    //-----------------------Aray for machine name ---------------------------
+    <string-array name="machinename">
+        <item>Husky Cap 1</item>
+        <item>Husky Cap 2</item>
+        <item>KM 1</item>
+        <item>KM 2</item>
+    </string-array>
+    //-----------------------Array for Production Result Type ----------------
+    <string-array name="prodresult1">
+        <item>Total Cap</item>
+    </string-array>
+
+    <string-array name="prodresult2">
+        <item>Good Cap</item>
+    </string-array>
+
+    <string-array name="prodresult3">
+        <item>Reject Purging Cap</item>
+    </string-array>
+
+    <string-array name="prodresult4">
+        <item>Reject IMD</item>
+    </string-array>
+
+    <string-array name="prodresult5">
+        <item>Reject Purging Extruder</item>
+    </string-array>
+
+    <string-array name="prodresult6">
+        <item>Total Reject</item>
+    </string-array>
+
+    //-----------------------Array for Initial Shift Inspection ----------------
+    <string-array name="params1">
+        <item>Level Oil Gear Box</item>
+    </string-array>
+    <string-array name="params2">
+        <item>Level Oil Hydraulic</item>
+    </string-array>
+    <string-array name="params3">
+        <item>Dehumudifier</item>
+    </string-array>
+    <string-array name="params4">
+        <item>Cap Cooler</item>
+    </string-array>
+    <string-array name="params5">
+        <item>Unsccramble</item>
+    </string-array>
+    <string-array name="params6">
+        <item>IMD Camera</item>
+    </string-array>
+    <string-array name="params7">
+        <item>Cooling Chiller</item>
+    </string-array>
+    <string-array name="params8">
+        <item>Cooling Tower</item>
+    </string-array>
+
+    <string name="linktosite"></string>
+
+</resources>

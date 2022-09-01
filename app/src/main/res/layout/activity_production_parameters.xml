@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".ui.parameters.ProductionParameters">
+
+
+    <ScrollView
+        android:id="@+id/contenform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ppheader"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/productionparametersheader"/>
+
+            <TextView
+                android:id="@+id/txt_operatornamed"
+                android:layout_below="@+id/ppheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                android:text="  Operator "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_operatorname"
+                android:layout_below="@+id/ppheader"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint="0perator"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_viewshift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_operatorname"
+                android:background="@drawable/background"
+                android:padding="4dp"
+                android:text="  Shift        "
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_shift"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_operatornamed"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/txt_parameterproduksiheader"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/spn_shift"
+                android:background="@drawable/backgroundnavbar"
+                android:padding="3dp"
+                android:text="  Production Parameters"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_parameterproduksichoice"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txt_parameterproduksiheader"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_attentionnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spn_parameterproduksichoice"
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:text="Attention please!  Filling in the production parameter form is carried out as many as 16 items, please fill in sequentially."
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#707070"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_actual1hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_attentionnote"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (1 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual1hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_attentionnote"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual2hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual1hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (2 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual2hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual1hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual3hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual2hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (3 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual3hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual2hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual4hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual3hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (4 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual4hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual3hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual5hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual4hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (5 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual5hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual4hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual6hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual5hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (6 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual6hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual5hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual7hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual6hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (7 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual7hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual6hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_actual8hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual7hours"
+                android:background="@drawable/background"
+                android:padding="3dp"
+                android:text="  Actual (8 Hours)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edt_valactual8hours"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt_actual7hours"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:hint=" Actual"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_valactual8hours"
+                android:backgroundTint="#00BCD4"
+                android:text="SUBMIT"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

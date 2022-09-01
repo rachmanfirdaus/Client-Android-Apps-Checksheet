@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.menuutama.projectaplikasimayora.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/nav_scanqrcode"
+        android:name="com.menuutama.projectaplikasimayora.ui.scanqrcode.ScanQRCode"
+        android:label="Scan QR Code"
+        tools:layout="@layout/activity_scan_qrcode" />
+    <activity
+        android:id="@+id/nav_handover"
+        android:name="com.menuutama.projectaplikasimayora.ui.handover.SerahTerima"
+        android:label="@string/menu_handover"
+        tools:layout="@layout/activity_serah_terima" />
+    <activity
+        android:id="@+id/nav_initialinspection"
+        android:name="com.menuutama.projectaplikasimayora.ui.intialinspection.InitialShiftInspection"
+        android:label="@string/menu_initialinspection"
+        tools:layout="@layout/activity_initial_shift_inspection" />
+    <activity
+        android:id="@+id/nav_parameters"
+        android:name="com.menuutama.projectaplikasimayora.ui.parameters.ProductionParameters"
+        android:label="@string/menu_parameters"
+        tools:layout="@layout/activity_production_parameters"/>
+    <activity
+        android:id="@+id/nav_productionresult"
+        android:name="com.menuutama.projectaplikasimayora.ui.productionresult.ProductionResult"
+        android:label="@string/menu_productionreslut"
+        tools:layout="@layout/activity_production_result" />
+    <activity
+        android:id="@+id/nav_material"
+        android:name="com.menuutama.projectaplikasimayora.ui.material.MaterialUsed"
+        android:label="@string/menu_material"
+        tools:layout="@layout/activity_material_used" />
+    <activity
+        android:id="@+id/nav_rejectimdform"
+        android:name="com.menuutama.projectaplikasimayora.ui.rejectimdform.RejectIMDForm"
+        android:label="@string/menu_rejectimdform"
+        tools:layout="@layout/activity_reject_imdform" />
+    <activity
+        android:id="@+id/nav_dailyreport"
+        android:name="com.menuutama.projectaplikasimayora.ui.dailyreport.DailyReport"
+        android:label="@string/menu_dailyreport"
+        tools:layout="@layout/activity_daily_report" />
+    <activity
+        android:id="@+id/nav_totalresinusage"
+        android:name="com.menuutama.projectaplikasimayora.ui.totalresinusage.TotalResinUsage"
+        android:label="Total Resin Usage"
+        tools:layout="@layout/activity_total_resin_usage" />
+
+</navigation>

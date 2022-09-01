@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.menuutama.projectaplikasimayora">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Packagelist Application"
+        android:roundIcon="@mipmap/ic_launcher_logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectAplikasiMayora"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".ui.scanqrcode.ScanQRCode"
+            android:exported="false" />
+        <activity
+            android:name=".ui.totalresinusage.TotalResinUsage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intialinspection.InitialShiftInspection"
+            android:exported="false" />
+        <activity
+            android:name=".QRCodeGenerate"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dailyreport.DailyReport"
+            android:exported="false" />
+        <activity
+            android:name=".ui.parameters.ProductionParameters"
+            android:exported="false" />
+        <activity
+            android:name=".ui.productionresult.ProductionResult"
+            android:exported="false" />
+        <activity
+            android:name=".ui.material.MaterialUsed"
+            android:exported="false" />
+        <activity
+            android:name=".ui.handover.SerahTerima"
+            android:exported="false" />
+        <activity
+            android:name=".ui.rejectimdform.RejectIMDForm"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ProjectAplikasiMayora.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.CaptureAct"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
+    </application>
+
+</manifest>

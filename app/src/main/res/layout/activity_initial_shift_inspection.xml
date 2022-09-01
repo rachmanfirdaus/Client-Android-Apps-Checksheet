@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#E6E6E6"
+    tools:context=".ui.intialinspection.InitialShiftInspection">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/ppheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/initialiinspectionbar"/>
+
+                <TextView
+                    android:layout_below="@+id/ppheader"
+                    android:id="@+id/txt_operatornamed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text="  Operator "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_operatorname"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/ppheader"
+                    android:layout_marginLeft="133dp"
+                    android:hint="0perator"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_viewshift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_operatornamed"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/background"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text="  Shift "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_shift"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_operatornamed"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/txt_leveloilgearbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_viewshift"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_leveloilgbdropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_viewshift"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_stateleveloilgb"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_leveloilgbdropdown"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:layout_marginTop="3dp"
+                    android:scrollbars="vertical"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_stateleveloilgbtext"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_leveloilgearbox"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_notedleveloilgb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_leveloilgbdropdown"
+                    android:layout_marginLeft="155dp"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="  Noted"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_noteleveloilgbtext"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_leveloilgearbox"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="   Min/Mid/Max"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_leveloilhydraulic"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_notedleveloilgb"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_leveloilhydraulicdropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_notedleveloilgb"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_stateleveloilhydraulic"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_leveloilhydraulicdropdown"
+                    android:background="@drawable/background"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_stateleveloilhydraulictext"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_leveloilhydraulic"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_notedleveloilhydraulic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_leveloilhydraulicdropdown"
+                    android:layout_marginLeft="155dp"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:layout_marginTop="3dp"
+                    android:scrollbars="vertical"
+                    android:text="  Noted"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_noteleveloilhydraulictext"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_leveloilhydraulic"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="   Min/Mid/Max"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_dehumudifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_notedleveloilhydraulic"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_dehumudifierdropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_notedleveloilhydraulic"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_statedehumudifier"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_dehumudifierdropdown"
+                    android:background="@drawable/background"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_statedehumudifiertext"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_dehumudifier"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_tempdehumudifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_dehumudifierdropdown"
+                    android:layout_marginLeft="155dp"
+                    android:background="@drawable/background"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:text="  Temp                                   °C"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_tempdehumudifiertext"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_dehumudifier"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_statedehumudifier"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  DP                       °C"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_dpdehumudifiertext"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_statedehumudifier"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_regdehumudifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_tempdehumudifier"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  Reg"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_regdehumudifiertext"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_tempdehumudifier"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_capcooler"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_capcoolerdropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_statecapcooler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_capcoolerdropdown"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_statecapcoolertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_capcooler"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_blower"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_statecapcooler"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  Blower                 Hz"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_valblowertext"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_statecapcooler"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_motorcapcooler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_statecapcooler"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  Motor                                  Hz"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_valmotorcapcoolertext"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_statecapcooler"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_unscramble"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_blower"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_unscrambledropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_motorcapcooler"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_stateunscramble"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_unscrambledropdown"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_stateunscrambletext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_unscramble"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_imdcamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_stateunscramble"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_imdcameradropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_stateunscramble"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_stateimdcamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_imdcameradropdown"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_stateimdcameratext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_imdcamera"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_coolingchiller"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_stateimdcamera"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/backgroundnavbar"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_coolingchillerdropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_stateimdcamera"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_statecoolingchiller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_coolingchillerdropdown"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_statecoolingchillertext"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_coolingchiller"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_intempcoolingchiller"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_statecoolingchiller"
+                    android:background="@drawable/background"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  In Temp                     °C "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_intempcoolingchillertext"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_statecoolingchiller"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_inpresscoolingchiller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_statecoolingchiller"
+                    android:background="@drawable/background"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  In Press                      Bar "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_inpresscoolingchillertext"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_statecoolingchiller"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_viewcoolingtower"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txt_inpresscoolingchiller"
+                    android:background="@drawable/backgroundnavbar"
+                    android:layout_marginTop="3dp"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=" "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_towerdropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txt_inpresscoolingchiller"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_viewstatetower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spn_towerdropdown"
+                    android:background="@drawable/background"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="3dp"
+                    android:text="  State"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_statetower"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_viewcoolingtower"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Ok/Not Ok"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_viewintemptower"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_viewstatetower"
+                    android:background="@drawable/background"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  In Temp                     °C "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_intemptower"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_viewstatetower"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/txt_viewinpresstower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_viewstatetower"
+                    android:background="@drawable/background"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="3dp"
+                    android:padding="4.5dp"
+                    android:scrollbars="vertical"
+                    android:text="  In Press                      Bar "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_inpresstower"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/txt_viewstatetower"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_inpresstower"
+                    android:backgroundTint="#00BCD4"
+                    android:text="SUBMIT"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".ui.totalresinusage.TotalResinUsage">
+
+        <ScrollView
+            android:id="@+id/contenform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp">
+
+                        <ImageView
+                            android:id="@+id/ppheader"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/totalresinheader" />
+
+                        <TextView
+                            android:id="@+id/txt_operatornamed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ppheader"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/background"
+                            android:padding="4dp"
+                            android:text="  Operator "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt_operatorname"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/ppheader"
+                            android:layout_marginLeft="133dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:hint="0perator"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/txt_viewshift"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/edt_operatorname"
+                            android:background="@drawable/background"
+                            android:padding="4dp"
+                            android:text="  Shift        "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_shift"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/txt_operatornamed"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/txt_materialtypes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spn_shift"
+                            android:background="@drawable/background"
+                            android:padding="3dp"
+                            android:text="  Materials"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_materialschoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/txt_viewshift"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/txt_totalnote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spn_materialschoice"
+                            android:layout_marginBottom="4dp"
+                            android:padding="4dp"
+                            android:text="Attention please! Filling out the form on the material items above is adjusted to the use of the material usage."
+                            android:textColor="#575757"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/txt_actualweight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_totalnote"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/background"
+                            android:padding="3dp"
+                            android:text="  Actual Weight                                             kg"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt_valactualweight"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/txt_totalnote"
+                            android:layout_marginLeft="133dp"
+                            android:layout_marginBottom="3dp"
+                            android:hint=" Actual"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/txt_percentages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edt_valactualweight"
+                            android:background="@drawable/background"
+                            android:padding="3dp"
+                            android:text="  Percentages                                                %"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/txt_actualweight"
+                            android:layout_marginLeft="133dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="4dp"
+                            android:hint=" Actual"
+                            android:textSize="17dp" />
+
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/edt_percent"
+                            android:backgroundTint="#00BCD4"
+                            android:text="SUBMIT"
+                            android:textSize="8pt"
+                            android:textStyle="bold" />
+
+                </RelativeLayout>
+        </ScrollView>
+
+
+</RelativeLayout>
